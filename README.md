@@ -25,18 +25,6 @@ The data is **simulated, not real sales data**. A Python script generates realis
 - **Power BI Desktop** — report building, DAX measures, data modeling, conditional formatting
 - **Python** — data generation and live-streaming scripts (pyodbc, Jupyter notebooks)
 
-## Project structure
-retail-sales-dashboard/
-├── python/
-│ ├── generate_sales.ipynb # generates 30 days of simulated historical data
-│ └── live_stream_sqlserver.ipynb # streams new live transactions into SQL Server
-├── sql/
-│ ├── 01_setup_schema.sql # creates tables and loads stores/products
-│ └── 02_kpi_queries.sql # KPI queries used to build the report
-├── RetailSalesDashBoard.pbix # the Power BI report (DirectQuery, live)
-└── dashboard_screenshot.png # preview of the finished report
-
-
 ## How it was built
 
 1. Generated 30 days of simulated transaction data with a Python script
